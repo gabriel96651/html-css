@@ -11,14 +11,14 @@
     </style>
 </head>
 <body>
-    <form action="cadastro.php" method="post" autocomplete="off">
+    <form action="#" method="post" autocomplete="on">
         <p>
             <label for="inome">nome:</label> 
-            <input type="text" name="name" id="inome" required >
+            <input type="text" name="name" id="inome"  required autocomplete="username">
         </p>
         <p>
             <label for="isenha">senha:</label>
-            <input type="password" name="senha" id="isenha" required minlength="8">
+            <input type="password" name="senha" id="isenha" required minlength="8" autocomplete="current-password">
         </p>
         <p>
             <input type="submit" value="enviar">
