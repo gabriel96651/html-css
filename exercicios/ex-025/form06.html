@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form06</title>
+</head>
+<body>
+    <h1>mais alguns controles de formularios</h1>
+
+    <form action="cadastro.php" autocomplete="on" method="get">
+<fieldset>
+    <legend>cores</legend>
+    <label for="icor">cor</label>
+    <input type="color" name="cor" id="icor" value="#ff0000">
+<br>
+    <label for="inivel">nivel de satisfaca</label>
+    <input type="range" name="nivel" id="inivel" 
+    min="1" max="5" value="3">
+<br>
+<label for="ifile">imagem</label>
+<input type="file" name="file" id="ifile">
+
+<fieldset>
+    <legend>informacoes</legend>
+    <label for="inome">nome</label>
+    <input type="text" name="nome" id="inome" autocomplete="name" required>
+
+    <br>
+    <label for="idata">data de nascimento</label>
+    <input type="date" name="data" id="idata" value="2024-01-05">
+<br>
+    <input type="submit" value="enviar">
+    <input type="reset" value="limpar">
+
+</fieldset>
+
+
+
+    </form>
+</body>
+</html>
