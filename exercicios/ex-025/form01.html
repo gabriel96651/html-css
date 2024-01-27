@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,19 +12,31 @@
 </head>
 
 <body>
-    <p>meu primeiro formulario</p>
+    <h1>cadastro</h1>
 
-    <form method="post" action="cadastro.php" autocomplete="off">
-        <p><label for="inome">nome:</label>
-            <input type="text" name="nome" id="inome"> 
+    <p>
+        <form action="cadastro.php" method="post">
+<!--nome-->
+            <label for="iname">nome</label>
+<input type="text" name="name" id="inmae" 
+autocomplete="off" placeholder="escreva seu nome aqui" required autocomplete >
         </p>
 
-        <p><label for="isobrenome">sobrenome:</label>  
-            <input type="text" name="isobrenome" id="isobrenome">
-        </p>
+<!--email-->
+<p>
+    <label for="iemail">email</label>
+    <input type="text" name="email" id="iemail" autocomplete="on" required>
+</p>
 
-        <p> 
-            <input type="submit" value="enviar"></p>
-    </form>
+<!--senha-->
+<p>
+    <label for="isenha">senha</label>
+    <input type="password" name="senha" id="isenha" required minlength="8" required>
+</p>
+
+<input type="submit" value="enviar">
+<input type="reset" value="limpar">
+        </form>
+    
 </body>
 </html>

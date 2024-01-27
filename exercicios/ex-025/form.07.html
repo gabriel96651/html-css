@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios</title>
+</head>
+<body>
+    <h1>exemplo de formulario </h1>
+
+    <p>
+        <label for="iest">estado</label>
+        <select name="estado" id="iest">
+<optgroup label="regiao sudeste">
+    <option value="rj">rio de janeiro</option>
+    <option value="sp">sao paulo</option>
+    <option value="mg">minas gerais</option>
+</otpgroup>
+
+<optgroup label="regiao nordeste">
+    <option value="ma">maranhao</option>
+    <option value="pe">pernambuco</option>
+    <option value="rn">rio grande do norte</option>
+</optgroup>
+        </select>
+    </p>
+
+    <p>
+        <label for="iprof">profissao</label>
+        <input type="text" name="prof" id="iprof" list="lstprof">
+        <datalist id="lstprof">
+            <opition >administrador</opition>
+            <opition >desenvolvedor</opition>
+            <opition >catabilista</opition>
+            <opition >professor</opition>
+        </datalist>
+    </p>
+
+    <p>
+        <label for="imensagem">mensagem</label><br>
+        <textarea name="mensagem" id="imensagem" cols="30" rows="10">
+
+        </textarea>
+    </p>
+
+    <input type="reset" value="limpar">
+    <input type="submit" value="enviar">
+</body>
+</html>
