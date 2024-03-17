@@ -19,6 +19,9 @@ header > h1 {
     text-align: center;
     margin: 0px 0px 10px 0px;
 }
+main {
+    margin: auto;
+}
 
 #burguer {
     background-color: rgb(30, 30, 30);
@@ -51,9 +54,12 @@ menu > ul > li > a {
 
 }
 
+
 menu > ul > li {
     margin: 3px 0px;
     transition: 0.2;
+    display: flex;
+    
 }
 
 menu > ul > li > a:hover {
